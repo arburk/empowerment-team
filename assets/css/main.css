@@ -1557,6 +1557,14 @@ section,
   padding: 0 20px 30px 20px;
 }
 
+.team .member .person-description {
+  text-align: left;
+}
+
+.team .member .person-image-placeholder {
+  font-size: xx-large;
+}
+
 .team .member h4 {
   font-weight: 700;
   margin-top: 16px;
@@ -2854,4 +2862,9 @@ section,
   color: white;
   background: red;
 
+}
+
+.logo-placeholder {
+  font-size: xxx-large;
+  font-family: "Montserrat",  sans-serif;
 }
