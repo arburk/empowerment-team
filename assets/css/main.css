@@ -699,10 +699,12 @@ h6 {
   color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
 
+/*
 .logo-placeholder {
   font-size: xxx-large;
   font-family: "Montserrat",  sans-serif;
 }
+*/
 
 /*--------------------------------------------------------------
 # Global Sections
@@ -1437,4 +1439,9 @@ section,
 
 .btn-close-impressum {
   background: var(--accent-color);
+}
+
+.img-fluid-480px {
+  max-width: 480px;
+  height: auto;
 }
