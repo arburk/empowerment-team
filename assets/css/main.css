@@ -905,6 +905,15 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+
+.about h2 {
+  color: var(--accent-color);
+}
+
+.about p {
+  color: var(--accent-color);
+}
+
 .about h3 {
   font-weight: 700;
   font-size: 28px;
@@ -923,6 +932,9 @@ section,
 .about .content ul li {
   padding: 0 0 10px 30px;
   position: relative;
+}
+.about .content  {
+  color: var(--accent-color);
 }
 
 .about .content ul i {
@@ -943,53 +955,58 @@ section,
   top: calc(50% - 47px);
 }
 
-/*--------------------------------------------------------------
-# Clients Section
---------------------------------------------------------------*/
-.clients .swiper {
-  padding: 10px 0;
-}
-
-.clients .swiper-wrapper {
-  height: auto;
-}
-
-.clients .swiper-slide img {
-  transition: 0.3s;
-}
-
-.clients .swiper-slide img:hover {
-  transform: scale(1.1);
-}
 
 /*--------------------------------------------------------------
-# Stats Section
+# scrollable background Sections
 --------------------------------------------------------------*/
-.stats .stats-item {
-  padding: 10px;
+.scrollable-bg-img {
+  background-color: transparent;
 }
 
-.stats .stats-item i {
-  font-size: 44px;
-  color: var(--accent-color);
-  line-height: 0;
-  margin-right: 15px;
+.scrollable-bg-img .container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  clip-path: inset(0 round 15px);
 }
 
-.stats .stats-item .purecounter {
-  color: var(--heading-color);
-  font-size: 40px;
+.scrollable-bg-img .container img {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: block;
-  font-weight: 700;
-  line-height: 40px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
-.stats .stats-item p {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  padding: 15px 0 0 0;
-  margin: 0;
-  font-family: var(--heading-font);
-  font-size: 14px;
+.scrollable-bg-img .container:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.scrollable-bg-img .container .content {
+  position: relative;
+  z-index: 3;
+}
+
+.scrollable-bg-img h3 {
+  color: var(--default-color);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.scrollable-bg-img p {
+  margin-bottom: 20px;
 }
 
 /*--------------------------------------------------------------
