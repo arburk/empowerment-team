@@ -6,6 +6,7 @@
 
 ### SEO
 - [Google Search Console](https://search.google.com/search-console?resource_id=sc-domain%3Aempowerment-team.ch&hl=de)
+- [Microsoft Bing](https://www.bing.com/webmasters/)
 
 ### Template
 - Template Name: Impact 
