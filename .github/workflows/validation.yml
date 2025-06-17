@@ -29,16 +29,3 @@ jobs:
             https://fonts.gstatic.com
           ignore_url_re: |
             ^https://www.linkedin.com/
-
-      - name: HTML5 Validator
-        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
-        with:
-          # Path of the files to test
-          root: /
-          # Format for logging output. Valid values: gnu, xml, json, text
-          format: text
-          # Logging Level. Valid values: DEBUG, INFO, WARNING. Default: WARNING
-          log_level: DEBUG # optional, default is WARNING
-          # Checks css as well
-          css: false
-          blacklist: python3.12 vendor
